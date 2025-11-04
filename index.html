@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Coach</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏋️‍♀️ AI Fitness Coach</h1>
+            <p class="subtitle">Your Personal Health & Fitness Assistant</p>
+        </header>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>💬 Chat with Your Fitness Coach</h2>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="bot-message">
+                        <div class="message-content">
+                            <strong>🤖 Fitness Coach:</strong> 
+                            Hello! I'm your AI fitness coach. I can help you with exercise recommendations, nutrition advice, BMI calculations, and motivation. What would you like to know?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" placeholder="Ask me about fitness, nutrition, or health..." maxlength="500">
+                    <button id="sendButton" onclick="sendMessage()">Send</button>
+                </div>
+
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>🤔 Thinking...</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="quick-actions">
+                    <h3>🎯 Quick Actions</h3>
+                    <button class="action-btn" onclick="quickAction('Give me some exercise recommendations')">
+                        💪 Get Exercise Tips
+                    </button>
+                    <button class="action-btn" onclick="quickAction('Give me nutrition advice')">
+                        🥗 Nutrition Advice
+                    </button>
+                    <button class="action-btn" onclick="quickAction('I want to calculate my BMI')">
+                        📊 Calculate BMI
+                    </button>
+                    <button class="action-btn" onclick="quickAction('Give me some motivation')">
+                        🌟 Get Motivated
+                    </button>
+                    <button class="action-btn" onclick="clearChat()">
+                        🔄 Clear Chat
+                    </button>
+                </div>
+
+                <div class="examples">
+                    <h3>💡 Try asking me about:</h3>
+                    <ul>
+                        <li>🏋️‍♀️ "Show me chest exercises"</li>
+                        <li>🥗 "What's the nutrition of chicken?"</li>
+                        <li>📊 "Calculate my BMI - I'm 170cm and 70kg"</li>
+                        <li>💪 "Give me motivation"</li>
+                        <li>🏃‍♂️ "I need a cardio workout"</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h3>🚀 Features:</h3>
+                    <ul>
+                        <li>🎯 Exercise Recommendations</li>
+                        <li>🍎 Nutrition Information</li>
+                        <li>📏 BMI Calculator</li>
+                        <li>💝 Motivational Support</li>
+                        <li>🏥 General Health Tips</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>🏋️‍♀️ <strong>Fitness Chatbot</strong> - Built with HTML, CSS, JavaScript and API Ninjas</p>
+            <p>💡 <em>Remember: This chatbot provides general fitness information. Always consult healthcare professionals for personalized advice.</em></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
