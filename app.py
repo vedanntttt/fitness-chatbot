@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from datetime import datetime
 from dotenv import load_dotenv
-from chatbot import FitnessChatbot
+from chatbot_vercel import FitnessChatbot
 
 # Load environment variables
 load_dotenv()
